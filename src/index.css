@@ -1,3 +1,4 @@
-.upper-footer-label{
-  background-color: blue;
+.upper-footer-label,
+.middle-footer-links{
+  background-color: beige;
 }
