@@ -1,0 +1,35 @@
+/* HEADER , NAVBAR */
+.cnt-navbar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  margin-top: 70px;
+  padding: 15px 0px;
+}
+
+ul {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar-links li,
+.navbar-links a {
+  color: #5e5a5c;
+  text-transform: uppercase;
+  font-size: 0.69rem;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+}
+
+.navbar-links li:hover {
+  border-bottom: 5px solid  #0282f9;
+}
+
+.navbar-links a:hover {
+  color: #0282f9 ;
+}
+
+.cnt-navbar img {
+  width: 70px;
+}
