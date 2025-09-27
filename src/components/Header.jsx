@@ -5,6 +5,7 @@ const Header = () => {
 
     <header>
           <Navbar />
+          <div className="jumbotron-banner"></div>
    </header>
    
   )

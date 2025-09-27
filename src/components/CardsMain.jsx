@@ -1,3 +1,5 @@
+import ComicCard from './ComicCard';
+
 const comics = [
   {
     id: 1,
@@ -154,23 +156,21 @@ const comics = [
 ];
 
 // aggiungo cards dinamicamente tramite map
-const cardsItemComics = (
-  <div className="card-comics">
-    {comics.map(comic => (
-      <div key={comic.id} className="comic-card">
-        <img src={comic.thumb} alt={comic.title} />
-        <h2>{comic.series}</h2>
-      </div>
-    ))}
-  </div>
-);
+// const cardsItemComics = comics.map((comic) => (
+//   <div key={comic.id} className="comic-card">
+//     <img src={comic.thumb} alt={comic.title} />
+//     <h2>{comic.series}</h2>
+//   </div>
+// ));
 
 const CardsMain = () => {
   return (
     <div className="cards-container">
-      {cardsItemComics} 
+      {comics.map((comic) => (
+        <ComicCard key={comic.id} comic={comic} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
 export default CardsMain
